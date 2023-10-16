@@ -1,0 +1,166 @@
+body{
+    margin: 0; /*El mergen será de 0*/
+    padding: 0; /*El padding tendra 0*/
+    font-size: 50 px; /* este establece el tamaño de la letra*/
+    font-family: Arial, Helvetica, sans-serif; /* Nos sirve para  ponerle estilo a la letras*/
+}
+header{
+    width: 100%; /*Ancho del contenedor*/
+    height: 60px; /*Alto del contenedor*/
+}
+header nav{
+    display: flex; /*hace que el nav sea un contenedor flexible*/
+    justify-content:flex-end; /*le decimos que dentro del contenedero flexible se justifiquen al final*/
+    padding: 15px; /*este agrega un relleno al contenido*/
+}
+header nav .nav-right-section{
+    display: flex; /*hacemos que el contenido del ulr sea un contenedor flexible*/
+    height: auto; /*altura del contenedor*/
+    justify-content:flex-end; /*lo justificamos al final*/
+    list-style: none; /*para quitar los puntos de la lista */
+    justify-content: center; /*centrara el contenido a lo largo del eje horizontal*/
+    align-items: center; /*este nos ayudara a centrar en el eje vertical */
+}
+nav .nav-right-section a{
+    margin-right: 5px; /*margen a la derecha*/
+    color: #000000; /*color*/
+}
+a{
+    text-decoration: none; /*le quitamos las lineas de abajo de los vinculos*/
+    cursor: pointer; /*hacemos que el cursor cambie cuando pase ensima del contenido*/
+}
+nav .nav-right-section .menu-icon{
+    background-image: url("https://static.thenounproject.com/png/756729-200.png"); /*le decimos que inserte una imagen con el vinculo para las aplicaciones*/
+    background-repeat: no-repeat; /*esto hara que la imagen no se repida en el fondo*/
+    background-position: center; /* se centrara en el centro*/
+    background-size: contain; /*esto hara que se modifique el tamaño dependiedo del tamaño de la pantalla*/
+    width: 30px; /*le damos anchura*/
+    height: 30px; /*la damos una altura*/
+    margin-bottom: 5px; /*le damos un margen abajo*/
+    cursor: pointer; /*el cursor cambiara de diceño*/
+}
+nav .nav-right-section img{
+    border-radius: 100%; /*hacemos que se redonde completamente*/
+    margin-left: 10px; /*le damos un margen izquierda*/
+    width: 30px; /*le damos anchura*/
+    height: 30px; /*la damos una altura*/
+}
+main{
+    margin-top: 150px; /*tenga un margen arriba*/
+    text-align: center; /*hace que el texto se centre de forma horizontal*/
+}
+main .main-logo{
+    width: 230px; /*tendra una anchura*/
+    margin: 0 auto; /*tendra un margen automatico*/
+    margin-bottom: 33px; /*tendra un margen abajo*/
+}
+main .main-logo img{
+    height: 92px; /*tendra una anchura*/
+    width: 272px;/*altura*/
+    cursor: pointer; /*cambio de cursor*/
+    text-align: center; /*se pondra en medio de la pantalla*/
+}
+main .main-input{
+    width: 560px; /*altura*/
+    margin: 0 auto; /*margen automatico*/
+    margin-bottom: 20px; /**un margen abajo*/
+}
+main .main-input .main-input-container{
+    width: 560px; /*altura*/
+    border: solid 1px #d0d0d7; /**el contenedor tendra un borde*/
+    border-radius: 100px; /*redonderaremos el contenedor*/
+    display: flex; /*sera flexible el contenedor*/
+    justify-content: flex-start; /*justificara el contenido al inicio*/
+    align-items: center; /*lo ubicara en el centro*/
+}
+main .main-input .main-input-container .search-icon{
+    width: 20px; /*altura*/
+    margin-left: 12px; /*tendra un margen izquierdo*/
+    margin-right: 12px; /*tendra un margen derecho*/
+    color: #aaaaaa; /*se le proporcionara un color*/
+    margin-top: 2px; /*tendra un margen arriba*/
+    cursor: pointer; /*el cursor cambiara*/
+}
+main .main-input .main-input-container input{
+    width: 480px; /*altura*/
+    height: 40px; /*anchura*/
+    border: none; /*no tendra bordes*/
+    outline: none; /*quita el contorno*/
+}
+main .main-input .main-input-container .micro{
+    justify-content:end; /*lo mandemo al final del contenedor*/
+    width: 13px; /*le pondremos un altura*/
+    height: 20px; /*anchura*/
+    cursor: pointer; /*cambio en el cursor*/
+    margin-left: 13px; /*margen en la izquierda*/
+}
+main .main-input .main-input-container .camara{
+    justify-content:end; /*lo mandamos al final del contenedor*/
+    margin-right: 15px; /*le ponemos un margen derecho*/
+    margin-left: 15px; /*le ponemos un margen izquierdo*/
+    width: 20px; /*altura*/
+    height: 20px; /*anchura*/
+    cursor: pointer; /*cambio del cursor*/
+}
+main .main-buttons{
+    width: 560px; /*altura*/
+    margin: 0 auto; /*margen automatico en 0*/
+    border-radius: 3px; /*lo redondeamos*/
+}
+main .main-buttons div{
+    display: inline-block; /* El elemento se coloca en línea con el contenido circundante,
+    pero aún puedes establecer un ancho y un alto para el elemento*/
+}
+main .main-buttons div button {
+    margin-left: 10px; /*margen izquierdo*/
+    width: 150px; /*altura*/
+    height: 35px; /*anchura*/
+    border: none; /*no tendra bordes*/
+    border-radius: 4px; /*tendra un redondeo*/
+    cursor: pointer; /*el cursor cambia*/
+}
+footer{
+    bottom: 0; /*establecer la posición de un elemento en relación 
+    con su contenedor posicionado*/
+    width: 100%; /*altura*/
+    position: absolute; /*posiciona un elemento de manera absoluta
+    en relación con su contenedor más cercano */
+    align-items: center; /*lo alinea al centro*/
+    background-color: #e3e3e3; /*le da un color*/
+    border-top: 1px solid #d6d6d6; /*le pone un borde al contenedor arriba*/
+}
+footer .top{
+    margin-left: 40px; /*un margen a la izquierda*/
+    list-style: none; /*para quitar los puntos de la lista */
+}
+footer .top .marge {
+    margin-top: 15px; /*un margen arriba*/
+}
+footer .bottom{
+    display: grid; /*ayuda hacer una cuadricula*/
+    grid-template-columns: 1fr 1fr; /*este ayuda aformar la cuadricula el numerod de columnas y filas*/
+    margin-top: 10px; /*un margen arriba*/
+    border-top: 1px solid #9a9999; /*pone un borde solamente arriba*/
+}
+footer ul{
+    display: flex;  /*hace que el contenedor sea flexible*/
+    list-style: none; /*para quitar los puntos de las listas*/
+    margin: 12px; /*este establece un margen perimetral*/
+    padding-left: 0; /*le decimos que no debe haber un espacio en blanco a lado izquierdo*/
+}
+footer .footer-left{
+    margin-left: 20px; /*hace un margen a la izquierda*/
+    justify-self: start; /*pone el contenido al inicio*/
+   
+}
+footer .footer-right{
+    justify-content: flex-end; /*manda el contenderor al final*/
+    margin-right: 30px; /*un margen a la derecha*/
+}
+footer div ul li a{
+    margin: 20px; /*hacee un margen general*/
+    color: #555454; /*color*/
+}
+footer .top .marge a{
+    color: #555454; /*color*/
+}
